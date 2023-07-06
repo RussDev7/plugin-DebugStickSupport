@@ -28,7 +28,7 @@ public class PlayerInteract implements Listener {
             if (clickedblock != null && action == Action.RIGHT_CLICK_BLOCK) {
                 if (excluded_blocks.contains(clickedblock.getType().toString())) {
                     event.setCancelled(true);
-                    player.sendMessage("你不能在这种类型的方块上使用调试棒！");
+                    player.sendMessage("你不能对这种类型的方块使用调试棒！");
                 }
             }
         }
