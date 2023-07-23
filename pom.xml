@@ -6,14 +6,14 @@
 
     <groupId>pl.ToSupePrzystojniak.Nubet</groupId>
     <artifactId>DebugStickCraftingInSurvival</artifactId>
-    <version>1.19</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <name>DebugStickCraftingInSurvival</name>
 
     <description>Plugin allows to craft "Debug Stick" in survival mode</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -75,7 +75,7 @@
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>RELEASE</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
