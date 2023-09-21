@@ -10,22 +10,17 @@ public final class DebugStickCraftingInSurvival extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
         config.options().copyDefaults(true);
         saveConfig();
-        Bukkit.getLogger().info(config.getString("excluded_blocks"));
-
-        Bukkit.broadcastMessage("DebugStickCraftingInSurvival 已开始工作！");
+        getLogger().info(config.getString("excluded_blocks"));
+        getLogger().info("DebugStickCraftingInSurvival 已开始工作！");
         Bukkit.addRecipe(new Crafting(this));
         getServer().getPluginManager().registerEvents(new PlayerInteract(this), this);
-
-
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
-        Bukkit.broadcastMessage("DebugStickCraftingInSurvival 已停止工作。");
+        getLogger().info("DebugStickCraftingInSurvival 已停止工作。");
     }
 }
 
